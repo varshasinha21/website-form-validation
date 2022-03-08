@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+   <script src="./final.js" defer ></script>
+    <title>Student Enrollment</title> 
+   
+  </head>
+  <body>
+<section>
+       <nav style="margin: 0%; padding: 0;" >
+    <div style="background-color:lightgreen; height: 100px;"  >
+           <h2 style="text-align: center;margin-top:1px;padding:2%;"><span class="nav" >Student Enrollment Form</span></h2>
+
+          </div>
+        </nav>
+	<div class="row">
+		<div class="column">
+	  <form class="form" id="form"  onsubmit="handleSumbit(event)" action="/try.html">
+		  <table style="width: 25%;margin-top: 10%;margin-left: 10%;width: 50%;">
+		 
+			  <thead>
+			  <tr class="=name">
+			  <td align="center">Name</td>
+			  <td><input required type="text" class="info" id="name" name="Name"></td>
+		  </tr> 
+			  </thead>
+			  <tbody>
+		  <tr>
+			  <td align="center">Email</td>
+			  <td><input required type="email" id="email" class="info" name = "EMail" email=""></td>
+		  </tr>
+		  <tr>
+			  <td align="center">Website</td>
+			  <td><input required type="url" id="website" class="info" name= "Website" website=""></td>
+		  </tr>
+		  <tr>
+			  <td align="center">Image link</td>
+			  <td><input required type="url" id="image" class="info" image="" name="Image"></td>
+		  </tr>
+		  <tr>
+			  <td align="center" >Gender:</td>
+			  <td><input type="radio" name="gender" class="form-check-label"  value="Male" id="=gen1">
+				  <label for="Male">Male</label>
+				  <input type="radio" name="gender" class="form-check-label"  value="Female" checked id="gen2">
+				  <label for="Female">Female</label></td>
+		  </tr>
+			  <tr>
+			  <td for="" align="center">Skills</td>
+			  <td>
+			  <input type="checkbox" id="java" class="checkbox" name="java" value="Java">
+				<label for="java">Java</label>
+				<input type="checkbox" id="html" class="checkbox" name="html" value="HTML">
+				<label for="css">HTML</label>
+				<input type="checkbox" id="css" class="checkbox" checked name="css" value="CSS">
+				<label for="CSS">CSS</label>
+			  </td>
+		  </tr>
+          
+              
+		  <tr>
+      
+			  <td class="vertical-center" ><input style="background-color:blue"  type="submit" value="Enroll Student" ></td>
+			  <td align="center"><input style="background-color:red" type="reset" value="Clear" onclick=""></td>
+		  </tr>
+			  
+			  </tbody>
+		  </table>
+  
+	 
+		  <div class="line"></div>        
+		  
+	  </form>
+         </div>
+	  <div style="height:300px;width:300px;overflow:auto;border:8px solid yellow; padding:0%;margin-top: 5%;" class= "column2 d-all">
+		             <h3 align="right" >Enrolled Student</h3>
+		  <table  style="position:relative;width:450px;padding-right: 0.1%;"border="2" id="show" class="show d-all" >
+			  <thead>
+				  <tr>
+					  <th >Description</th>
+					  
+					  <th>image</th>
+					  
+				  </tr>
+			  </thead>
+              <tbody id="enrollment-records" class="text-start"></tbody>
+	</table>
+		</div>
+	  </div>
+	        <div id="clearBtn">
+              <button style="background-color:red;" class="btn btn-danger" type="button" onclick="clearData();" >Delete All </button>
+            </div>
+	
+ </section>
+       <footer>
+	<p  align="center" style= "background-color: lightgreen; padding:3%;margin-top: 4.5%;" >Copyright 2021-2022 Fresher Training</p>
+</footer>	
+</body>
+
+</html>
